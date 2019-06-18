@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>买猜商城</title>
+	<meta charset="utf-8"/>
+	<style>
+	*{
+   	margin: 0px;
+   	padding: 0px;
+   }
+   ul,li,ol{
+    list-style: none;
+   }
+   /*Top*/
+	.top{
+		width: 1203px;
+		height: 66px;
+		margin: 0 auto;
+	}
+	.top span{
+   	font-size: 12.93px;
+   	color: #0d0408;
+   	height: 34px;
+   	line-height: 34px;
+   	margin-left: 526px;
+   }
+   .top a{
+   	text-decoration: none;
+   	font-size: 14.78px;
+   	color: #0d0408;
+   	margin-left: 30px;
+   	font-weight: bolder;
+   }
+   .top form select{
+   	border:0px;
+   	font-size: 14.78px;
+   	color: #0d0408;
+   	width: 83px;
+   }
+   .fo{
+    position: absolute;
+    left:868px;
+    top:6px;
+   }
+   .rm{
+   	position: absolute;
+   	left:950px;
+   	top:6px;
+   }
+   .pp{
+   	font-size: 14.78px;
+    position: absolute;
+    left:1056px;
+    top:7px;
+   }
+   #img{
+   	margin-left:35px;
+   }
+   #gmi{
+   	margin-left: 7px;
+   }
+   .search{
+   	width:1203px;
+   	height: 62px;
+   	margin: 0 auto;
+   }
+   .search ul li{
+   	display:inline-block;
+   }
+   .search form{
+   	height: 44px;
+   } 
+   form input{
+   	position: relative;
+   	top:-17px;
+   	height: 44px;
+   	width: 540px;
+   	line-height: 44px;
+   	text-align: center;
+   	font-size: 14.78px;
+   	color: #cccccc;
+   	margin-left: 178px;
+   	margin-top:13px;
+   	border-width: 1px 0px 1px 1px;
+   	border-color: #373741;
+   }
+   .sou{
+   	height: 44px;
+   	width: 59px;
+   	text-align: center;
+   	border-top:1px solid #373741;
+   	border-right:1px solid #373741;
+   	border-bottom:1px solid #373741;
+   	border-left: 2px solid #cccccc;
+   	position: relative;
+   	left:-5px;
+   	top:-6.5px;
+   }
+   .gou{
+   	position: absolute;
+   	left:1159px;
+   	top:90px;
+   }
+   /*导航*/ 
+   .nav{
+   	width: 1203px;
+   	height: 64px;
+   	margin: 0 auto;
+   }
+   .nav select{
+   	border: 0px;
+    font-size: 14.78px;
+    font-weight: bolder;
+    color: #050505;
+    margin-top: 33px;
+   }
+   .nav ul{
+   	position: absolute;
+   	left: 150px;
+   	top:161px;
+   }
+   .nav ul li{
+   	display: inline-block;
+   	font-size: 14.78px;
+   	width: 115px;
+   	height: 26px;
+   	text-align: center;
+   	margin-bottom: 10px;
+   }
+   .nav a{
+   	text-decoration: none;
+   	color:#050505;
+   }
+   .nav a:hover{
+   	color: #3aa747;
+   }
+   .nav ul li:hover{
+   	margin-bottom-width:10px;
+   	border-bottom: 8px solid #3aa747;
+   }
+   /*大图*/
+   .first{
+   	width: 100%;
+   	height: 452px;
+   }
+   .first img{
+   	width: 100%;
+   	border-top:5px solid #3aa747;
+   } 
+   /*大图的小图*/
+   .second{
+   	width: 80px;
+   	height: 404px;
+   	background-color: #111612;
+   	position: fixed;
+   	top:200px;
+   	right:0px;
+   }
+   .second ul li{
+   	height: 80px;
+   	width: 70px;
+   	margin-left: 4px;
+    border-bottom:2px solid #5d5f5d;
+   }
+   .second img{
+   	margin-top: 30px;
+   	margin-left: 20px;
+   }
+   /*主体*/
+   .main-2{
+   	height: 1016px;
+   	width: 1198px;
+   	margin: 0 auto;
+   }
+   .main-2 p{
+   	height: 60px;
+   	line-height: 60px;
+   	margin-left: 30px;
+   	font-size: 18px;
+   	color: #000;
+   }
+   .main-2 span{
+   	font-size: 14px;
+   	color:#5c5a5a;
+   }
+   #span-1{
+   	float:right;
+   }
+   .main-22{
+   	height: 134px;
+   }
+   .main-22 ul{
+   	width: 1198px;
+   	border-top: 1px solid #ccc;
+   	border-left: 1px solid #ccc;
+   	border-right:1px solid #ccc;
+   }
+   .main-22 ul li{
+   	display: inline-block;
+   	width: 102px;
+   	height: 45px;
+   	line-height: 45px;
+   	text-align: center;
+   }
+   #lastul{
+   	border:1px solid #ccc;
+   }
+   #lastli{
+   	float: right;
+   	right: 28px;
+   }
+   .main-22 a{
+   	text-decoration: none;
+   	font-size: 16px;
+   	color:#000;
+   }
+   .main-22 a:visited{
+   	color: #3aa747
+   }
+   #bac{
+   	background-color: #e5e5e5;
+   }
+   .main-23{
+   	height: 809px;
+   }
+   .main-23 ul li{
+   	border:1px solid #878787;
+   	margin-right: 20px;
+   	margin-bottom: 33px;
+   	width: 272px;
+   	height: 292px;
+   	float: left;
+   	text-align: center;
+   }
+   .tu{
+   	margin-top: 30px;
+   }
+   .main-23 ul{
+   	margin-top: 60px;
+   }
+   #m-img{
+   	margin-left: 13px;
+   }
+   .p-1{
+   	height:52px;
+   	width: 273px;
+   	background-color: rgba(152,152,152,0.5);
+    position: absolute;
+    top:1140px;
+   }
+   #p-11{
+   	margin-top:-13px;
+   	margin-left: 1px;
+   	color: #fff;
+   }
+   #p-12{
+   	margin-top: -41px;
+   	margin-left: 2px;
+   	color: #fff;
+   }
+   .p-2{
+   	height:51px;
+   	width: 273px;
+   	background-color: rgba(152,152,152,0.5);
+    position: absolute;
+    top:1469px;
+   }
+   #m-img:hover .p-1{
+   	height: 292px;
+   	width: 273px;
+   	background-color:rgba(152，152，152，0.5);
+   	position: relative;
+   	left: 0;
+   	top:-298px;
+   }
+   #m-img:hover #p-11{
+   	position: absolute;
+   	top:100px;
+   	left:60px;
+   }
+   #m-img:hover #p-12{
+   	position: absolute;
+   	top:170px;
+   	left:65px;
+   }
+   #m-img:hover .p-2{
+   	height: 292px;
+   	width: 273px;
+   	background-color:rgba(152，152，152，0.5);
+   	position: relative;
+   	left: 0;
+   	top: -265px;
+   }
+   #m1-img:hover .p-1{
+   	height: 292px;
+   	width: 273px;
+   	background-color:rgba(152，152，152，0.5);
+   	position: relative;
+   	left: 0;
+   	top:-278px;
+   }
+   #m1-img:hover #p-11{
+   	position: absolute;
+   	top:120px;
+   	left:60px;
+   }
+   #m1-img:hover #p-12{
+   	position: absolute;
+   	top:180px;
+   	left:75px;
+   }
+   #m2-img:hover .p-1{
+   	height: 292px;
+   	width: 273px;
+   	background-color:rgba(152，152，152，0.5);
+   	position: relative;
+   	left: 0;
+   	top:-270px;
+   }
+   #m2-img:hover #p-11{
+   	position: absolute;
+   	top:120px;
+   	left:60px;
+   }
+   #m2-img:hover #p-12{
+   	position: absolute;
+   	top:180px;
+   	left:75px;
+   }
+    #m3-img:hover .p-1{
+   	height: 292px;
+   	width: 273px;
+   	background-color:rgba(152，152，152，0.5);
+   	position: relative;
+   	left: 0;
+   	top:-300px;
+   }
+   #m3-img:hover #p-11{
+   	position: absolute;
+   	top:120px;
+   	left:60px;
+   }
+   #m3-img:hover #p-12{
+   	position: absolute;
+   	top:180px;
+   	left:75px;
+   }
+   #m4-img:hover .p-2{
+   	height: 292px;
+   	width: 273px;
+   	background-color:rgba(152，152，152，0.5);
+   	position: relative;
+   	left: 0;
+   	top:-297px;
+   }
+   #m4-img:hover #p-11{
+   	position: absolute;
+   	top:120px;
+   	left:70px;
+   }
+   #m4-img:hover #p-12{
+   	position: absolute;
+   	top:180px;
+   	left:50px;
+   }
+   #m5-img:hover .p-2{
+   	height: 292px;
+   	width: 273px;
+   	background-color:rgba(152，152，152，0.5);
+   	position: relative;
+   	left: 0;
+   	top:-303px;
+   }
+   #m5-img:hover #p-11{
+   	position: absolute;
+   	top:120px;
+   	left:65px;
+   }
+   #m5-img:hover #p-12{
+   	position: absolute;
+   	top:180px;
+   	left:43px;
+   }
+   #m6-img:hover .p-2{
+   	height: 292px;
+   	width: 273px;
+   	background-color:rgba(152，152，152，0.5);
+   	position: relative;
+   	left: 0;
+   	top:-298px;
+   }
+   #m6-img:hover #p-11{
+   	position: absolute;
+   	top:120px;
+   	left:65px;
+   }
+   #m6-img:hover #p-12{
+   	position: absolute;
+   	top:180px;
+   	left:78px;
+   }
+   /*底部*/
+   .bottom-1{
+   	width: 100%;
+   	height: 101px;
+   	background-color: #f5f5f5;
+   }
+   .bottom-1 ul{
+   	width: 100%;
+   	margin-top: 29px;
+   	margin-left: 40px;
+   }
+   .bottom-1 ul li{
+   	float: left;
+   	height:50px; 
+   	width:290px;
+   	margin: 29px auto;
+   	border-right:1px solid #e2e2e2;
+   }
+   .bottom-1 img{
+   	margin-left: 30px;
+   }
+   .bz-right{
+   	margin-left: 100px;
+   	margin-top: -50px;
+   }
+   .bottom-1 p{
+    font-size: 13px;
+   	color: #4f4f4f;
+   }
+   #bz-p1{
+   	font-size: 19px;
+   	color: #333333;
+   }
+   .bottom{
+   	width:100%;
+   	height: 100px;
+   	background-color: #323232;
+   }
+   .bottom-2{
+   	width: 1200px;
+   	height: 100px;
+   	margin: 0 auto;
+   }
+   .bottom-2 ul li{
+   	display: inline-block;
+   	margin-top: 20px;
+   	border-right:1px solid #696969;
+   	width: 120px;
+   	color:#fff;
+   	text-align: center;
+   }
+   .bottom-2 p{
+   	margin-left:450px;
+   	margin-top:30px;
+   	color:#fff;
+   }
+	</style>
+</head>
+<body>
+<!--顶部-->
+<div>
+   <div class="top">
+      <p>
+         <span>
+            嘿，欢迎来买猜商城！
+            <a href="#">请登录</a>
+            <a href="#">免费注册</a>
+            <form>
+               <select class="fo">
+               	<option value="我的订单"selected>我的订单</option>
+               </select>
+               <select class="rm">
+               	<option value="我的买猜" selected>我的买猜</option>
+               </select>
+            </form>   
+            <p class="pp">
+            帮助中心
+            <img id="img"src="imgs08/wb.png" alt="微博"/>
+            <img id="gmi"src="imgs08/wx.png" alt="微信"/>
+            </p>
+         </span>
+      </p>
+   </div>
+</div>
+<!--搜索-->
+<div>
+   <div class="search">
+      <ul>
+         <li><img src="imgs08/logo.png" alt="logo"/></li>
+         <li><form>
+            <input type="text" name="inp1" value="请输入搜索内容"/>
+         </form></li>
+         <li class="sou"><img src="imgs08/search.png" alt="搜索"/></li>
+         <li class="gou"><img src="imgs08/cart.png" alt="cart"/></li>
+      </ul>
+   </div>
+</div>
+<!--导航-->
+<div>
+   <div class="nav">
+      <select>
+      	<option class="opt" value="全部商品分类">全部商品分类</option>
+      </select>
+      <ul>
+         <li><a href="#">首页</a></li>
+         <li><a href="#">名酒</a></li>  
+         <li><a href="#">茗茶</a></li>	
+         <li><a href="#">玉石</a></li>	
+         <li><a href="#">休闲食品</a></li>	
+         <li><a href="#">洗护用品</a></li>	
+         <li><a href="#">土特产</a></li>	
+         <li><a href="#">积分商城</a></li>	
+         <li><a href="#">抽奖游戏</a></li>
+      </ul>
+   </div>
+</div>
+<!--大图-->
+	<div class="first">
+      <img src="imgs08/banner.png" alt="banner"/>
+   </div>
+<!--主体-->
+<div>
+	<div class="main-2">
+      	<p>首页
+      	<span>>  玉石</span>
+      	<span id="span-1">共200件相关商品</span>
+      	</p>
+        <div class="main-22">
+           <ul>
+           	<li id="bac"><a href="#">玉石</a></li>
+           	<li><a href="#x">白玉</a></li>
+           	<li><a href="#y">碧玉</a></li>
+           	<li><a href="#z">黄玉</a></li>
+           	<li><a href="#a">和田玉</a></li>
+           	<li><a href="#b">翡翠</a></li>
+           	<li><a href="#c">绿松玉</a></li>
+           	<li><a href="#d">墨玉</a></li>
+           </ul>
+           <ul>
+            <li id="bac"><a href="#p">其他</a></li>
+           	<li><a href="#e">吊坠</a></li>
+           	<li><a href="#f">扳指</a></li>
+           	<li><a href="#g">手镯</a></li>
+           </ul>
+           <ul id="lastul">
+              <li id="bac"><a href="#q">地区</a></li>
+              <li><a href="#h">北京</a></li>
+              <li><a href="#i">安徽</a></li>
+              <li><a href="#j">福建</a></li>
+              <li><a href="#k">内蒙古</a></li>
+              <li><a href="#l">宁夏</a></li>
+              <li><a href="#m">黑龙江</a></li>
+              <li><a href="#n">河北</a></li>
+              <li id="lastli"><a href="#o">更多</a></li>
+           </ul>
+        </div>
+        <div class="main-23">
+           <ul>
+           	<li id="m-img"><img src="imgs08/img1.png" alt="img1"/>
+           	<div class="p-1">
+           	   <p id="p-11">竞猜价：￥399.00</p>
+               <p id="p-12">翡翠千手观音吊坠</p>
+            </div></li>
+           	<li id="m1-img"><img style="margin:20px auto"id="tu"src="imgs08/img2.png" alt="img2"/>
+           	   <div class="p-1">
+           	      <p id="p-11">竞猜价：￥1980.00</p>
+                  <p id="p-12">翡翠龙凤吊坠</p>
+               </div></li>
+           	<li id="m2-img"><img style="margin:30px auto"id="tu" src="imgs08/img3.png" alt="img3"/>
+               <div class="p-1">
+           	      <p id="p-11">竞猜价：￥199.00</p>
+                  <p id="p-12">翡翠花蕊吊坠</p>
+               </div></li>
+           	<li id="m3-img"><img style="margin:35px auto"id="tu"src="imgs08/img4.png" alt="img4"/>
+           	   <div class="p-1">
+           	      <p id="p-11">竞猜价：￥199.00</p>
+                  <p id="p-12">翡翠如意吊坠</p>
+               </div></li>
+           	<li id="m-img"><img style="margin-top:30px"src="imgs08/img5.png" alt="img5"/>
+           	   <div class="p-2">
+           	      <p id="p-11">竞猜价：￥99.00</p>
+                  <p id="p-12">翡翠婵吊坠</p>
+               </div></li>
+           	<li id="m4-img"><img style="margin:30px auto"id="tu"src="imgs08/img6.png" alt="img6"/>
+              	<div class="p-2">
+           	      <p id="p-11">竞猜价：￥99.00</p>
+                  <p id="p-12">翡翠观音（浅色）吊坠</p>
+               </div></li>
+           	<li id="m5-img"><img style="margin:35px auto"id="tu"src="imgs08/img7.png" alt="img7"/>
+           	    <div class="p-2">
+           	      <p id="p-11">竞猜价：￥199.00</p>
+                  <p id="p-12">翡翠平安扣（深色）吊坠</p>
+               </div></li>
+           	<li id="m6-img"><img style="margin:35px auto"id="tu"src="imgs08/img8.png" alt="img8"/>
+           	   <div class="p-2">
+           	      <p id="p-11">竞猜价：￥199.00</p>
+                  <p id="p-12">翡翠如意吊坠</p>
+               </div></li>
+           </ul>
+        </div>
+   </div>
+</div>
+<!--底部1-->
+<div>
+   <div class="bottom-1">
+       <ul>
+           <li><img src="imgs08/f1.png" alt="f1"/>
+              <div class="bz-right">
+                 <p id="bz-p1">资质认证</p>
+                 <p>服务商100%实名认证</p>
+              </div></li>
+           <li>
+              <img src="imgs08/f2.png" alt="f2"/>
+              <div class="bz-right">
+                 <p id="bz-p1">支付安全</p>
+                 <p>明码标价支付及信息安全</p>
+              </div></li>
+           <li>
+              <img src="imgs08/f3.png" alt="f3"/>
+              <div class="bz-right">
+                 <p id="bz-p1">保险赔付</p>
+                 <p>为您提供担保赔付</p>
+              </div></li>
+           <li style="border-width:0px">
+              <img src="imgs08/f4.png" alt="f4"/>
+              <div class="bz-right">
+                 <p id="bz-p1">售后服务</p>
+                 <p>服务出问题经理全程跟进</p>
+              </div></li>
+       </ul>
+   </div>
+</div>
+<!--大图的小图-->
+<div class="second">
+   <ul>
+	 <li><img src="imgs08/cart1.png" alt="cart1"/></li>
+     <li><img src="imgs08/qq.png" alt="qq"/></li>
+	 <li><img src="imgs08/zuji.png" alt="zuji"></li>
+	 <li><img src="imgs08/erweima.png" alt="erweima"></li>
+	 <li><img src="imgs08/gotop.png" alt="gotop"></li>
+   </ul>
+</div>
+<!--底部2-->
+<div class="bottom">
+	<div class="bottom-2">
+	   <ul>
+	   	<li style="margin-left:100px">首页</li>
+	   	<li>工商代理</li>
+	   	<li>财务代记账</li>
+	   	<li>股权交易与变更</li>
+	   	<li>企业贷款</li>
+	   	<li>办公室租赁</li>
+	   	<li>社保公积金代理</li>
+	   	<li>法律服务</li>
+	   </ul>
+	   <p>© 2017-2018 买猜商城有限公司 版权所有</p>
+	</div>
+</div>
+</body>
+</html>
